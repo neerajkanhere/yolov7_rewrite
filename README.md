@@ -10,7 +10,7 @@ I tested this code on several private and public datasets. I was able to achieve
 
 ## Example: Car Object Detection
 
-As an example, we will train YOLOv7 on the Kaggle dataset [Car Object Detection](https://www.kaggle.com/datasets/sshikamaru/car-object-detection). First, download this dataset and extract it so that the root directory contains `train_solution_bounding_boxes (1).csv` and a subdirectory `training_images`. Then the training can be started by executing `python example.py`.
+As an example, we will train YOLOv7 on the Kaggle dataset [Car Object Detection](https://www.kaggle.com/datasets/sshikamaru/car-object-detection). First, download this dataset and extract it so that the root directory contains `train_solution_bounding_boxes (1).csv` and a subdirectory `training_images`. Then the training can be started by executing `python example.py`. The Jupyter notebook `example_prediction.ipynb` shows how the model can be used for prediction.
 
 Some additional information:
 - `DetectionDataset`: requires that the dataset consists of a csv file with the columns `["image_path", "class_id", "xmin", "ymin", "xmax", "ymax"]`.
